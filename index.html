@@ -1,75 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio – Emna Boughamoura</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hadil Dahech — Portfolio</title>
+
+  <!-- Google Fonts & Material Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio — Hadil Dahech. IoT, systèmes embarqués, computer vision, web dev.">
 </head>
 <body>
-  <header>
-    <h1>Emna Boughamoura</h1>
-    <p>IoT & Embedded Systems Developer | Web Developer | Tech Enthusiast</p>
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="brand">
+        <div class="avatar" aria-hidden="true">HD</div>
+        <div>
+          <h1>Hadil Dahech</h1>
+          <p class="muted">IoT • Embedded Systems • Computer Vision</p>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero container">
+      <div class="hero-left">
+        <h2>Hello — I build smart things that care.</h2>
+        <p class="lead">
+          IoT & Embedded developer focused on intelligent systems and human-centered applications.
+          Creator of the <strong>Smart Daily Wellness Assistant</strong> (emotion recognition + IoT).
+        </p>
+        <div class="cta-row">
+          <a class="btn-primary" href="#projects">Voir mes projets</a>
+          <a class="btn-outline" href="#contact">Contact</a>
+        </div>
+        <div class="stats">
+          <div><strong>3</strong><span>Major Projects</span></div>
+          <div><strong>95%</strong><span>Emotion detection accuracy</span></div>
+          <div><strong>1000+</strong><span>data points / hour</span></div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="card-profile">
+          <div class="profile-top">
+            <div class="avatar-large">HD</div>
+            <div>
+              <h3>Hadil Dahech</h3>
+              <p class="muted">Licence TIC (Réseaux IoT) — ISIMM Monastir</p>
+            </div>
+          </div>
+          <div class="profile-body">
+            <p><strong>Focus:</strong> Emotion recognition, IoT systems (ESP32/Arduino), web dashboards.</p>
+            <ul class="quick-list">
+              <li>Python, C, Java</li>
+              <li>DeepFace, OpenCV</li>
+              <li>ESP32, Arduino, Sensors</li>
+            </ul>
+            <div class="contact-mini">
+              <span class="material-icons">email</span> hadildahech718@gmail.com
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Passionate about IoT, embedded systems, and intelligent automation, I enjoy creating 
-      smart solutions that connect the digital and physical worlds.
-    </p>
-  </section>
+  <main>
+    <section id="projects" class="container section">
+      <h2 class="section-title">Projects & Experiences</h2>
+      <div class="grid">
+        <article class="project-card">
+          <div class="tag">PFA</div>
+          <h3>Smart Daily Wellness Assistant</h3>
+          <p class="muted">IoT & Intelligent Well-Being — Sep. 2025 – Present</p>
+          <p>
+            IoT assistant that monitors temperature, humidity, light and weight. ESP32 & Arduino based hardware,
+            buzzer, LCD and mobile interface. Real-time emotion detection (DeepFace + OpenCV) and reminders (hydration, comfort).
+          </p>
+          <p class="small"><strong>Highlights:</strong> 1,000+ emotion datapoints/hour • 95% classification accuracy • personalized feedback</p>
+        </article>
 
-  <section id="projects">
-    <h2>Projects & Experiences</h2>
+        <article class="project-card">
+          <div class="tag">Web</div>
+          <h3>E-Commerce Website</h3>
+          <p class="muted">2025</p>
+          <p>
+            Responsive online store using HTML, CSS and JavaScript. Product listings, search & filter, shopping cart and checkout UI.
+            Modern, accessible UI and interactive features for a smooth UX.
+          </p>
+        </article>
 
-    <div class="project">
-      <h3>Smart Daily Wellness Assistant (PFA Project)</h3>
-      <p>
-        Developed an IoT-based smart assistant to promote daily wellness by monitoring temperature,
-        humidity, light, and weight. Implemented alerts and notifications to help users maintain comfort 
-        and hydration using ESP32, Arduino, sensors, buzzer, LCD, and a mobile interface.
-      </p>
+        <article class="project-card">
+          <div class="tag">IoT</div>
+          <h3>Intelligent Home Automation System</h3>
+          <p class="muted">Jan – May 2025</p>
+          <p>
+            Real-time IoT smart home with Arduino, DHT11, LM35, LDR and soil humidity sensors. Mobile app + LCD interface.
+            Automated irrigation and lighting with remote/manual override.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <div class="tag">Volunteer</div>
+          <h3>PCB Design — CPU Club</h3>
+          <p class="muted">Volunteer</p>
+          <p>
+            PCB schematic & layout with Proteus, prototyping, soldering and testing. Supported workshops for new members on embedded circuits.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container section">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="chips">
+        <span>Python</span><span>C</span><span>Java</span><span>HTML & CSS</span><span>Arduino / ESP32</span>
+        <span>DeepFace / OpenCV</span><span>Flutter</span><span>UI/UX</span><span>IoT Networks</span>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <h4>Technical</h4>
+          <ul>
+            <li>Embedded programming (ESP32, Arduino)</li>
+            <li>Computer vision & emotion recognition (DeepFace, OpenCV)</li>
+            <li>Web dashboards & mobile UI</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Soft Skills</h4>
+          <ul>
+            <li>Leadership & teamwork</li>
+            <li>Project management</li>
+            <li>Communication & technical writing</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Get in touch</h3>
+          <p>Email: <a href="mailto:hadildahech718@gmail.com">hadildahech718@gmail.com</a></p>
+          <p>Phone: +216 95 717 066</p>
+          <p>Location: Monastir, Tunisia</p>
+          <div class="socials">
+            <a href="#" aria-label="GitHub"><span class="material-icons">code</span></a>
+            <a href="#" aria-label="LinkedIn"><span class="material-icons">business</span></a>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Merci ! Message envoyé (simulation).');">
+          <label>
+            <span>Your name</span>
+            <input type="text" placeholder="Ton nom" required />
+          </label>
+          <label>
+            <span>Your email</span>
+            <input type="email" placeholder="email@exemple.com" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea placeholder="Bonjour Hadil..." required></textarea>
+          </label>
+          <div class="form-row">
+            <button class="btn-primary" type="submit">Envoyer</button>
+            <button class="btn-ghost" type="reset">Effacer</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Hadil Dahech — IoT & Embedded Systems • Monastir, Tunisia</p>
     </div>
-
-    <div class="project">
-      <h3>Intelligent Home Automation System (PFA Project)</h3>
-      <p>
-        Built a real-time IoT-based smart home integrating Arduino boards and sensors (DHT11, LM35, LDR, soil humidity).
-        Automated lighting and irrigation with mobile app control and LCD feedback.
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>E-Commerce Website</h3>
-      <p>
-        Designed and developed a responsive online store using HTML, CSS, and JavaScript.
-        Included product listings, shopping cart, and checkout pages with search and filter options.
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>PCB Design Volunteer – CPU Club</h3>
-      <p>
-        Collaborated on PCB design and prototyping using Proteus. Assisted with soldering, circuit testing, 
-        and training workshops on embedded systems for new members.
-      </p>
-    </div>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Java, Python, HTML, CSS, JavaScript</li>
-      <li>IoT & Embedded Systems (Arduino, ESP32)</li>
-      <li>Web Development</li>
-      <li>Networking Basics</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>📧 emna.boughamoura@gmail.com | 📍 Monastir, Tunisia</p>
-    <p>© 2025 Emna Boughamoura</p>
   </footer>
+
 </body>
 </html>
